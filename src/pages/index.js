@@ -12,7 +12,7 @@ const BlogPostIndex = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <SEO title="All posts" />
       <figure style={{ float: `right` }}>
-        <img src="/cirno-falling.gif" alt="Cirno falling" />
+        <img src="./cirno-falling.gif" alt="Cirno falling" />
         <figcaption style={{ textAlign: `center` }}>
           Temporary image^
         </figcaption>
