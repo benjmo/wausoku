@@ -1,0 +1,21 @@
+.navbarLink {
+  display: inline-block;
+  color: #ddd;
+  padding: 0 1rem;
+  margin: 0;
+  text-decoration: none;
+  box-shadow: none;
+  /* box-sizing: border-box; */
+}
+
+.navbarLink:hover {
+  background-color: gray;
+}
+
+@media (max-width: 768px) {
+  .navbarLink {
+    padding: 20px 0;
+    font-size: 1.5rem;
+    z-index: 6;
+  }
+}

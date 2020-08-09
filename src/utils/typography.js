@@ -1,7 +1,18 @@
 import Typography from "typography"
+import stowLakeTheme from "typography-theme-stow-lake"
 import Wordpress2016 from "typography-theme-wordpress-2016"
 
+/* Temporarily including various styles for testing */
+
 Wordpress2016.overrideThemeStyles = () => {
+  return {
+    "a.gatsby-resp-image-link": {
+      boxShadow: `none`,
+    },
+  }
+}
+
+stowLakeTheme.overrideThemeStyles = () => {
   return {
     "a.gatsby-resp-image-link": {
       boxShadow: `none`,

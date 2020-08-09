@@ -1,19 +1,23 @@
+import { Link } from "gatsby"
 import React from "react"
-import { Link, graphql } from "gatsby"
-
-import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
 
-const BlogIndex = ({ data, location }) => {
+const BlogPostIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
   const posts = data.allMarkdownRemark.edges
 
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="All posts" />
-      <Bio />
+      <figure style={{ float: `right` }}>
+        <img src="/cirno-falling.gif" alt="Cirno falling" />
+        <figcaption style={{ textAlign: `center` }}>
+          Temporary image^
+        </figcaption>
+      </figure>
+      <h1>News and Announcements</h1>
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
         return (
@@ -44,7 +48,7 @@ const BlogIndex = ({ data, location }) => {
   )
 }
 
-export default BlogIndex
+export default BlogPostIndex
 
 export const pageQuery = graphql`
   query {

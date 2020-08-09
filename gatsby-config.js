@@ -1,15 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
-    author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
-    },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
-    social: {
-      twitter: `kylemathews`,
-    },
+    title: `wausoku`,
+    description: `A community website for the Touhou 12.3 game - Hisoutensoku (非想天則).`,
+    siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`, // TODO: change
   },
   plugins: [
     {
