@@ -3,6 +3,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
+import cirno from "./cirno-falling.gif"
 
 const BlogPostIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
@@ -12,7 +13,7 @@ const BlogPostIndex = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <SEO title="All posts" />
       <figure style={{ float: `right` }}>
-        <img src="./cirno-falling.gif" alt="Cirno falling" />
+        <img src={cirno} alt="Cirno falling" />
         <figcaption style={{ textAlign: `center` }}>
           Temporary image^
         </figcaption>
