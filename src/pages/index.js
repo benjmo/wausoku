@@ -11,7 +11,7 @@ const BlogPostIndex = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="All posts" />
+      <SEO title="Home" />
       <figure style={{ float: `right` }}>
         <img src={cirno} alt="Cirno falling" />
         <figcaption style={{ textAlign: `center` }}>
