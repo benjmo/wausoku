@@ -12,6 +12,7 @@ const BlogPostIndex = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="wausoku - Touhou Hisoutensoku (東方非想天則) Community Website - Home" />
+
       <figure style={{ float: `right` }}>
         <img src={cirno} alt="Cirno falling" />
         <figcaption style={{ textAlign: `center` }}>
