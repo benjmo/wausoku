@@ -1,39 +1,90 @@
+import { faBars } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { Link } from "gatsby"
 import React, { useState } from "react"
-import NavbarLinks from "./navbar-links"
 import styles from "./navbar.module.css"
-// import Logo from "./Logo"
 
-// const Navigation = styled.nav``
-// const Toggle = styled.div``
-// const Navbox = styled.div``
-// const Hamburger = styled.div``
-
+/**
+ * The navigation bar for the site
+ * It's not done in a react-y way at all
+ * And is also tedious to add/change elements, but it'll do for now
+ */
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false)
 
   return (
     <nav className={styles.navbar}>
-      {/* <Logo /> */}
-      <div
-        className="Toggle"
-        // navbarOpen={navbarOpen}
+      <span
+        id={styles.menuToggle}
+        role="button"
+        tabIndex="0"
         onClick={() => setNavbarOpen(!navbarOpen)}
+        onKeyDown={() => setNavbarOpen(!navbarOpen)}
       >
-        {navbarOpen ? (
-          <div className="hamburger-open" />
-        ) : (
-          <div className="hamburger" />
-        )}
+        <FontAwesomeIcon icon={faBars} />
+      </span>
+      <div
+        className={`${styles.container} ${
+          navbarOpen ? "" : styles.mobileHidden
+        }`}
+      >
+        <ul className={styles.menu}>
+          <li className={styles.menuItem}>
+            <Link className={styles.navbarLink} to="/">
+              Home
+            </Link>
+          </li>
+          <li className={styles.menuItem}>
+            <Link className={styles.navbarLink} to="/">
+              News
+            </Link>
+          </li>
+          <li className={`${styles.menuItem} ${styles.hasSubmenu}`}>
+            <Link className={styles.navbarLink} to="/">
+              Region
+            </Link>
+            <ul className={styles.submenu}>
+              <li className={styles.menuItem}>
+                <Link className={styles.navbarLink} to="/">
+                  International
+                </Link>
+              </li>
+              <li className={styles.menuItem}>
+                <Link className={styles.navbarLink} to="/">
+                  Oceania
+                </Link>
+              </li>
+            </ul>
+          </li>
+          <li className={`${styles.menuItem} ${styles.hasSubmenu}`}>
+            <Link className={styles.navbarLink} to="/">
+              Guides
+            </Link>
+            <ul className={styles.submenu}>
+              <li className={styles.menuItem}>
+                <Link className={styles.navbarLink} to="/">
+                  Gameplay
+                </Link>
+              </li>
+              <li className={styles.menuItem}>
+                <Link className={styles.navbarLink} to="/">
+                  Character
+                </Link>
+              </li>
+              <li className={styles.menuItem}>
+                <Link className={styles.navbarLink} to="/">
+                  Setup
+                </Link>
+              </li>
+            </ul>
+          </li>
+          <li className={styles.menuItem}>
+            <Link className={styles.navbarLink} to="/">
+              Tools
+            </Link>
+          </li>
+        </ul>
       </div>
-      {navbarOpen ? (
-        <div className={styles.navboxOpen}>
-          <NavbarLinks />
-        </div>
-      ) : (
-        <div className={styles.navbox}>
-          <NavbarLinks />
-        </div>
-      )}
     </nav>
   )
 }
