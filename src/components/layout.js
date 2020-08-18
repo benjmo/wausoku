@@ -6,6 +6,7 @@ import Navbar from "./navbar/navbar"
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
   let header
+  let pageContainerClasses = styles.pageContainer
 
   if (location.pathname === rootPath) {
     header = (
@@ -23,6 +24,8 @@ const Layout = ({ location, title, children }) => {
         </Link>
       </h3>
     )
+
+    pageContainerClasses += ` ${styles.subpageContainer}`
   }
   return (
     <div id={styles.background}>
@@ -30,7 +33,7 @@ const Layout = ({ location, title, children }) => {
         <div className={styles.bannerContainer}>{header}</div>
       </header>
       <Navbar />
-      <div className={styles.pageContainer}>
+      <div className={pageContainerClasses}>
         <main>{children}</main>
         <footer>
           © {new Date().getFullYear()}, Built with

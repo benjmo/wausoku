@@ -47,8 +47,8 @@ li > ul {
   top: 50%;
   right: 1rem;
   transform: translateY(-50%);
-  font-size: 1.2rem;
-  font-weight: 500;
+  font-size: 0.9rem;
+  font-weight: 900;
 }
 
 .submenu {
@@ -75,15 +75,18 @@ li > ul {
 .navbarLink {
   display: block;
   text-decoration: none;
-  padding: 0 1rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
   margin: 0;
   color: #ddd;
   box-shadow: none;
+  font-size: 0.9rem;
+  font-weight: normal;
   /* height: 2rem; */
 }
 
 .navbarLink:hover {
   background-color: rgb(50, 50, 50);
+  color: #e26212;
 }
 
 #menuToggle {
@@ -117,6 +120,10 @@ li > ul {
     display: block;
   }
 
+  .submenu .menuItem {
+    padding-left: 1rem;
+  }
+
   #menuToggle {
     position: relative;
     display: block;
@@ -125,7 +132,7 @@ li > ul {
     margin-right: 0;
     padding: 0 1rem;
     cursor: pointer;
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: #ddd;
     text-align: center;
   }

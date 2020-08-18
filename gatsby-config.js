@@ -3,7 +3,7 @@ module.exports = {
   siteMetadata: {
     title: `wausoku`,
     description: `A community website for the Touhou 12.3 game - Hisoutensoku (東方非想天則).`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`, // TODO: change
+    siteUrl: `https://benjmo.github.io/wausoku/`, // TODO: change after custom domain
   },
   plugins: [
     {

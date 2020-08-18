@@ -2,8 +2,8 @@ import { Link } from "gatsby"
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { rhythm } from "../utils/typography"
 import cirno from "./cirno-falling.gif"
+import styles from "./index.module.css"
 
 const BlogPostIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
@@ -24,12 +24,8 @@ const BlogPostIndex = ({ data, location }) => {
         return (
           <article key={node.fields.slug}>
             <header>
-              <h3
-                style={{
-                  marginBottom: rhythm(1 / 4),
-                }}
-              >
-                <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+              <h3 className={styles.postTitle}>
+                <Link className={styles.postLink} to={node.fields.slug}>
                   {title}
                 </Link>
               </h3>

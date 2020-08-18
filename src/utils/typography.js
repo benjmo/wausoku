@@ -22,7 +22,7 @@ stowLakeTheme.overrideThemeStyles = () => {
 
 delete Wordpress2016.googleFonts
 
-const typography = new Typography(Wordpress2016)
+const typography = new Typography(stowLakeTheme)
 
 // Hot reload typography in development.
 if (process.env.NODE_ENV !== `production`) {
