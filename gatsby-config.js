@@ -9,8 +9,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/blog`,
-        name: `blog`,
+        path: `${__dirname}/content/posts`,
+        name: `posts`,
       },
     },
     {
@@ -54,8 +54,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        // Options: https://web.dev/add-manifest/
+        name: `wausoku`,
+        short_name: `wausoku`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,

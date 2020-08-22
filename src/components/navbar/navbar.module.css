@@ -1,10 +1,10 @@
 /* Reset some applied styles from typography library */
-li,
-ul {
+.navbar li,
+.navbar ul {
   margin: 0;
 }
 
-li > ul {
+.navbar li > ul {
   margin: 0;
 }
 
