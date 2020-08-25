@@ -19,7 +19,7 @@ _(Folder structure for user generated content to be decided)_
 
 Unless you are contributing towards development of the website, this is not mandatory, but it will let you preview exactly how your content will look once it is live.
 
-The site is build using [Gatsby](https://www.gatsbyjs.org/).
+The site is built using [Gatsby](https://www.gatsbyjs.org/).
 
 1.  **Set up the environment**
 
@@ -46,4 +46,4 @@ _Details to come_
 
 ---
 
-Built on the (Gatsby Starter Blog)[https://github.com/gatsbyjs/gatsby-starter-blog] template.
+Built on the [Gatsby Starter Blog](https://github.com/gatsbyjs/gatsby-starter-blog) template.

@@ -35,51 +35,51 @@ const Navbar = () => {
             </Link>
           </li>
           <li className={styles.menuItem}>
-            <Link className={styles.navbarLink} to="/">
+            <Link className={styles.navbarLink} to="/news">
               News
             </Link>
           </li>
           <li className={`${styles.menuItem} ${styles.hasSubmenu}`}>
-            <Link className={styles.navbarLink} to="/">
+            <Link className={styles.navbarLink} to="/region">
               Region
             </Link>
             <ul className={styles.submenu}>
               <li className={styles.menuItem}>
-                <Link className={styles.navbarLink} to="/">
+                <Link className={styles.navbarLink} to="/region/international">
                   International
                 </Link>
               </li>
               <li className={styles.menuItem}>
-                <Link className={styles.navbarLink} to="/">
+                <Link className={styles.navbarLink} to="/region/oceania">
                   Oceania
                 </Link>
               </li>
             </ul>
           </li>
           <li className={`${styles.menuItem} ${styles.hasSubmenu}`}>
-            <Link className={styles.navbarLink} to="/">
+            <Link className={styles.navbarLink} to="/guides">
               Guides
             </Link>
             <ul className={styles.submenu}>
               <li className={styles.menuItem}>
-                <Link className={styles.navbarLink} to="/">
+                <Link className={styles.navbarLink} to="/guides/gameplay">
                   Gameplay
                 </Link>
               </li>
               <li className={styles.menuItem}>
-                <Link className={styles.navbarLink} to="/">
+                <Link className={styles.navbarLink} to="/guides/character">
                   Character
                 </Link>
               </li>
               <li className={styles.menuItem}>
-                <Link className={styles.navbarLink} to="/">
+                <Link className={styles.navbarLink} to="/guides/setup">
                   Setup
                 </Link>
               </li>
             </ul>
           </li>
           <li className={styles.menuItem}>
-            <Link className={styles.navbarLink} to="/">
+            <Link className={styles.navbarLink} to="/tools">
               Tools
             </Link>
           </li>
