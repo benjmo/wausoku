@@ -1,5 +1,4 @@
 module.exports = {
-  pathPrefix: "/wausoku",
   siteMetadata: {
     title: `wausoku`,
     description: `A community website for the Touhou 12.3 game - Hisoutensoku (東方非想天則).`,
