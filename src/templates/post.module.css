@@ -1,0 +1,22 @@
+#postTitle {
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+.subtitle {
+  font-size: 0.87rem;
+  display: block;
+  margin-bottom: 1.4rem;
+}
+
+#bottomHr {
+  margin-bottom: 1.4rem;
+}
+
+#bottomNav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+}
