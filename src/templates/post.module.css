@@ -9,8 +9,10 @@
   margin-bottom: 1.4rem;
 }
 
-#bottomHr {
-  margin-bottom: 1.4rem;
+.midDotDivider::after {
+  content: "\00B7";
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
 }
 
 #bottomNav {

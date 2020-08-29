@@ -18,7 +18,21 @@ const PostTemplate = ({ data, pageContext, location }) => {
       <article>
         <header>
           <h1 id={styles.postTitle}>{post.frontmatter.title}</h1>
-          <p className={styles.subtitle}>{post.frontmatter.date}</p>
+          <p className={styles.subtitle}>
+            {post.frontmatter.author && (
+              <React.Fragment>
+                <span>Written by {post.frontmatter.author}</span>
+                <span className={styles.midDotDivider}></span>
+              </React.Fragment>
+            )}
+            {post.frontmatter.date}
+            {post.frontmatter.edited && (
+              <React.Fragment>
+                <span className={styles.midDotDivider}></span>
+                <i>Last Edited: {post.frontmatter.edited}</i>
+              </React.Fragment>
+            )}
+          </p>
         </header>
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr id={styles.bottomHr} />
@@ -64,6 +78,8 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
+        edited(formatString: "MMMM DD, YYYY")
+        author
         description
       }
     }
