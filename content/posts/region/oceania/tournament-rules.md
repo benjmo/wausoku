@@ -40,15 +40,16 @@ We suggest players set the **delay value to 2** if possible, but please discuss 
 
 ## Characters, decks and stages
 
-- There are no restrictions on what character or deck you can pick at the start of a set.
-- However, during the set you will be **locked to your character on a win.**
-  - If you win a game with random select, you will be locked to the character that you played as in the winning game.
-  - You will be able to change your character if you lose a game.
-  - There are no restrictions on changing your decks/profiles mid set.
-  - The character lock does not carry over between sets.
-- The recommended stage is “Scarlet Devil Mansion Library”.
-  - Other stages may be selected if both players are in agreement.
-  - Please avoid visually cluttered stages such as ‘Shore of Misty Lake’ if your game is being streamed.
+There are no restrictions on what character or deck you can pick at the start of a set.  
+However, during the set you will be **locked to your character on a win.**  
+If you win a game with random select, you will be locked to the character that you played as in the winning game.  
+You will be able to change your character if you lose a game.  
+There are no restrictions on changing your decks/profiles mid set.  
+The character lock does not carry over between sets.
+
+The recommended stage is “Scarlet Devil Mansion Library”.  
+Other stages may be selected if both players are in agreement.  
+Please avoid visually cluttered stages such as ‘Shore of Misty Lake’ if your game is being streamed.
 
 ## Player conduct
 
