@@ -7,3 +7,16 @@ body,
   padding: 0px;
   overflow: auto;
 }
+
+#contents {
+  margin-top: 2.8rem;
+}
+
+:root {
+  /* Theme colours (not finalised) */
+  --global-base-dark: #222;
+  --global-off-white: #ddd;
+  --global-background-color: #e4d1a0;
+  --global-background-color-lighter: #f2e8cf;
+  --global-accent-primary: #e26212;
+}
