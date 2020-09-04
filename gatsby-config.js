@@ -4,7 +4,7 @@ module.exports = {
   siteMetadata: {
     title: `wausoku`,
     description: `A community website for the Touhou 12.3 game - Hisoutensoku (東方非想天則).`,
-    siteUrl: `https://benjmo.github.io/wausoku/`, // TODO: change after custom domain
+    siteUrl: `https://wausoku.com`,
   },
   plugins: [
     {
@@ -71,7 +71,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/sakuya-icon.svg`,
+        icon: `content/assets/namazu-left.png`, // this is temporary, .svg icons breaks win10 build
       },
     },
     `gatsby-plugin-react-helmet`,
