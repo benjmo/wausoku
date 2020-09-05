@@ -1,1 +1,80 @@
-/* */
+.displayImage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 250px;
+}
+
+.cardContent h4,
+.cardContent li {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.cardContent ul {
+  margin-top: 0;
+  margin-bottom: 0.5;
+  list-style-type: circle;
+}
+
+.icon {
+  max-width: 25px;
+  max-height: 25px;
+  padding: 0;
+  margin: 0;
+}
+
+.inline {
+  display: inline-block;
+}
+
+/* For the responsive CSS grid inside the page container */
+/* http://www.responsivegridsystem.com/ */
+
+/*  SECTIONS  */
+.section {
+  clear: both;
+  padding: 0px;
+  margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+  display: block;
+  float: left;
+  margin: 1% 0 1% 1.6%;
+}
+.col:first-child {
+  margin-left: 0;
+}
+
+/*  GROUPING  */
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  zoom: 1; /* For IE 6/7 */
+}
+
+/*  GRID OF TWO COLUMNS (2:1) */
+.span_2_of_3 {
+  width: 66.13%;
+}
+.span_1_of_3 {
+  width: 32.26%;
+}
+
+@media only screen and (max-width: 767px) {
+  .col {
+    margin: 1% 0 1% 0%;
+  }
+  .span_2_of_3,
+  .span_1_of_3 {
+    width: 100%;
+  }
+}

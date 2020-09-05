@@ -19,13 +19,22 @@ const PostIndex = ({ name, posts }) => {
         const title = node.frontmatter.title || node.fields.slug
         return (
           <article key={node.fields.slug}>
-            <header>
+            <header className={styles.nowrap}>
               <h3 className={styles.postTitle}>
                 <Link className={styles.postLink} to={node.fields.slug}>
                   {title}
                 </Link>
               </h3>
-              <small>{node.frontmatter.date}</small>
+              <small>
+                {node.frontmatter.date}
+                {node.frontmatter.edited && `*`}
+              </small>
+              {node.frontmatter.author && (
+                <React.Fragment>
+                  <span className={styles.midDotDivider}></span>
+                  <small>{node.frontmatter.author}</small>
+                </React.Fragment>
+              )}
             </header>
             <section>
               <p

@@ -7,6 +7,12 @@
   margin-top: 2rem;
 }
 
+.midDotDivider::after {
+  content: "\00B7";
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+}
+
 .postLink {
   box-shadow: none;
 }

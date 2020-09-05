@@ -1,8 +1,10 @@
+const path = require("path")
+
 module.exports = {
   siteMetadata: {
     title: `wausoku`,
     description: `A community website for the Touhou 12.3 game - Hisoutensoku (東方非想天則).`,
-    siteUrl: `https://benjmo.github.io/wausoku/`, // TODO: change after custom domain
+    siteUrl: `https://wausoku.com`,
   },
   plugins: [
     {
@@ -23,6 +25,24 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          {
+            resolve: "gatsby-remark-embed-video",
+            options: {
+              width: 800,
+              ratio: 1.77, // Optional: Defaults to 16/9 = 1.77
+              height: 400, // Optional: Overrides optional.ratio
+              related: false, //Optional: Will remove related videos from the end of an embedded YouTube video.
+              noIframeBorder: true, //Optional: Disable insertion of <style> border: 0
+              urlOverrides: [
+                {
+                  id: "youtube",
+                  embedURL: videoId =>
+                    `https://www.youtube-nocookie.com/embed/${videoId}`,
+                },
+              ], //Optional: Override URL of a service provider, e.g to enable youtube-nocookie support
+              // containerClass: 'embedVideo-container', //Optional: Custom CSS class for iframe container, for multiple classes separate them by space
+            },
+          },
           {
             resolve: `gatsby-remark-images`,
             options: {
@@ -69,7 +89,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/sakuya-icon.svg`,
+        icon: `content/assets/namazu-left.png`, // this is temporary, .svg icons breaks win10 build
       },
     },
     `gatsby-plugin-react-helmet`,
@@ -80,6 +100,14 @@ module.exports = {
       },
     },
     `gatsby-plugin-catch-links`,
+    {
+      resolve: "gatsby-plugin-root-import",
+      options: {
+        assets: path.join(__dirname, "content/assets"),
+        pages: path.join(__dirname, "src/pages"),
+        components: path.join(__dirname, "src/components"),
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

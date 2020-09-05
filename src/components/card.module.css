@@ -1,0 +1,20 @@
+.card {
+  background-color: var(--global-background-color-lighter);
+  -webkit-box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+.cardHeader {
+  padding: 0.8rem 1.4rem;
+  border-bottom: 1px solid rgba(160, 160, 160, 0.2);
+  /* background-color: var(--global-background-color); */
+}
+
+.cardContent {
+  padding: 1rem 1.4rem;
+}
+
+.cardTitle {
+  margin: 0px;
+}

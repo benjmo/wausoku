@@ -2,8 +2,27 @@ html,
 body,
 #___gatsby,
 #gatsby-focus-wrapper {
-  height: 100%;
+  /* 
+   * Here we use 100vh instead of 100% due to CSS issue 
+   * Where, if 100% is combined with overflow: auto
+   * scrollTo() no longer works, meaning page navigation does not reset scroll
+   * https://github.com/gatsbyjs/gatsby/issues/26762
+   */
+  min-height: 100vh;
   margin: 0px;
   padding: 0px;
   overflow: auto;
+}
+
+#contents {
+  margin-top: 2.8rem;
+}
+
+:root {
+  /* Theme colours (not finalised) */
+  --global-base-dark: #222;
+  --global-off-white: #ddd;
+  --global-background-color: #e4d1a0;
+  --global-background-color-lighter: #f2e8cf;
+  --global-accent-primary: #e26212;
 }

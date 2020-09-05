@@ -1,0 +1,24 @@
+#postTitle {
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+.subtitle {
+  font-size: 0.87rem;
+  display: block;
+  margin-bottom: 1.4rem;
+}
+
+.midDotDivider::after {
+  content: "\00B7";
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+}
+
+#bottomNav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+}
