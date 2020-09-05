@@ -3,18 +3,18 @@ import React from "react"
 import Layout from "../../../components/layout"
 import PostIndex from "../../../components/post-list"
 
-const AllGameplayGuides = ({ data, location }) => {
+const AllOtherGuides = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
   const posts = data.allMarkdownRemark.edges
 
   return (
     <Layout location={location} title={siteTitle}>
-      <PostIndex name="All Gameplay Guides" posts={posts} />
+      <PostIndex name="All Other Guides" posts={posts} />
     </Layout>
   )
 }
 
-export default AllGameplayGuides
+export default AllOtherGuides
 
 export const pageQuery = graphql`
   query {
@@ -25,7 +25,7 @@ export const pageQuery = graphql`
     }
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
-      filter: { fileAbsolutePath: { regex: "posts/guides/gameplay/" } }
+      filter: { fileAbsolutePath: { regex: "posts/guides/other/" } }
     ) {
       edges {
         node {

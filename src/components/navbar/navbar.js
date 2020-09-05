@@ -57,6 +57,23 @@ const Navbar = () => {
             </ul>
           </li>
           <li className={`${styles.menuItem} ${styles.hasSubmenu}`}>
+            <Link className={styles.navbarLink} to="/game">
+              Game
+            </Link>
+            <ul className={styles.submenu}>
+              <li className={styles.menuItem}>
+                <Link className={styles.navbarLink} to="/game/download">
+                  Download
+                </Link>
+              </li>
+              <li className={styles.menuItem}>
+                <Link className={styles.navbarLink} to="/game/mods">
+                  Mods
+                </Link>
+              </li>
+            </ul>
+          </li>
+          <li className={`${styles.menuItem} ${styles.hasSubmenu}`}>
             <Link className={styles.navbarLink} to="/guides">
               Guides
             </Link>
@@ -76,11 +93,21 @@ const Navbar = () => {
                   Setup
                 </Link>
               </li>
+              <li className={styles.menuItem}>
+                <Link className={styles.navbarLink} to="/guides/other">
+                  Other
+                </Link>
+              </li>
             </ul>
           </li>
           <li className={styles.menuItem}>
-            <Link className={styles.navbarLink} to="/tools">
-              Tools
+            <Link className={styles.navbarLink} to="/resources">
+              Resources
+            </Link>
+          </li>
+          <li className={styles.menuItem}>
+            <Link className={styles.navbarLink} to="/faq">
+              FAQ
             </Link>
           </li>
         </ul>

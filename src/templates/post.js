@@ -21,7 +21,7 @@ const PostTemplate = ({ data, pageContext, location }) => {
           <p className={styles.subtitle}>
             {post.frontmatter.author && (
               <React.Fragment>
-                <span>Written by {post.frontmatter.author}</span>
+                <span>Posted by {post.frontmatter.author}</span>
                 <span className={styles.midDotDivider}></span>
               </React.Fragment>
             )}

@@ -25,7 +25,7 @@ export const pageQuery = graphql`
     }
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
-      filter: { fileAbsolutePath: { regex: "posts/guides/character/" } }
+      filter: { fileAbsolutePath: { regex: "posts/guides/setup/" } }
     ) {
       edges {
         node {
