@@ -36,9 +36,8 @@ const Layout = ({ location, title, children }) => {
       <div className={pageContainerClasses}>
         <main>{children}</main>
         <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          © {new Date().getFullYear()} wausoku | <Link to="/about/">About</Link>{" "}
+          | <Link to="/contribute/">Contribute</Link>
         </footer>
       </div>
     </div>
