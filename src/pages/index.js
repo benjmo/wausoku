@@ -34,7 +34,7 @@ const Homepage = ({ data, location }) => {
         </div>
         <div class={`${styles.col} ${styles.span_1_of_3}`}>
           <small>
-            New player? Check out the <Link to="/">FAQ</Link>
+            New player? Check out the <Link to="/faq">FAQ</Link>
           </small>
           {/* Perhaps this can be moved to its own component later */}
           <Card title="Quick Links">
